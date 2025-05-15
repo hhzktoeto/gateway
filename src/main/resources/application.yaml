@@ -14,7 +14,7 @@ server:
   port: 8080
 
 frontend:
-  uri: http://localhost:5174
+  uri: http://localhost:5174, http://localhost:4200
 
 logging:
   level:
