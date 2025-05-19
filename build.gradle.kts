@@ -29,6 +29,11 @@ dependencyManagement {
     }
 }
 
+tasks.bootJar {
+    archiveFileName.set("gateway.jar")
+    destinationDirectory.set(file("./build/"))
+}
+
 tasks.withType<Test> {
     useJUnitPlatform()
 }
