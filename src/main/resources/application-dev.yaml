@@ -6,7 +6,7 @@ spring:
       mvc:
         routes:
           - id: transaction-service
-            uri: http://transaction-service:8081
+            uri: http://localhost:8081
             predicates:
               - Path=/api/v1/transactions/**,/api/v1/categories/**
 
@@ -19,7 +19,7 @@ logging:
     servlet: org.springframework.web.servlet.DispatcherServlet
   level:
     root: info
-    tcp: warn
+    tcp: info
     servlet: debug
   pattern:
     console: '%d{dd.MM.YYYY HH:mm:ss.SSS} %highlight(%-5level) --- [%25thread] --- %-75logger{75} : %cyan(%msg%n)'
